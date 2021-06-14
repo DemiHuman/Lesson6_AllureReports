@@ -26,7 +26,7 @@ public class GitHub {
     }
 
     public void checkIssueInRepository(String numberIssue) {
-        $(withText(numberIssue)).should(Condition.exist);
+        $(withText(numberIssue)).should(Condition.visible);
     }
 
     @Attachment(value = "Screenshot", type = "image/png")
